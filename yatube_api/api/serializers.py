@@ -51,13 +51,13 @@ class FollowSerializer(serializers.ModelSerializer):
         fields = ('user', 'following')
         model = Follow
 
-    validators = [
-        serializers.UniqueTogetherValidator(
-            queryset=Follow.objects.all(),
-            fields=['user', 'following'],
-            message='You already follow this user'
-        )
-    ]
+        validators = [
+            serializers.UniqueTogetherValidator(
+                queryset=Follow.objects.all(),
+                fields=['user', 'following'],
+                message='You already follow this user'
+            )
+        ]
 
 # в документации метод имеет параметры (self, attrs) поч? Как с ним работать?
     def validate(self, data):
