@@ -59,7 +59,6 @@ class FollowSerializer(serializers.ModelSerializer):
             )
         ]
 
-# в документации метод имеет параметры (self, attrs) поч? Как с ним работать?
     def validate(self, data):
         if self.context['request'].user == data['following']:
             raise serializers.ValidationError(
