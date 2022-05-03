@@ -8,10 +8,10 @@ YaTube реализован на `Djangorestframework 3.12.4`. Аутентиф�
 
 ### Клонируйте репозиторий: ###
 
-    git clone https://github.com/mark-rom/api_final_yatube.git
+    git clone https://github.com/mark-rom/YaTube-API.git
 
 ### Перейдите в репозиторий в командной строке: ###
-    cd api_final_yatube
+    cd YaTube-API
 
 ### Создайте и активируйте виртуальное окружение: ###
     python3.9 -m venv env
